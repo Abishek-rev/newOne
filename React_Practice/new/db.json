@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "body": "sundher pichai interview",
+      "title": "Disscusing the future of tech"
+    },
+    {
+      "id": "2",
+      "body": "marcus  review tesla interview",
+      "title": "tesla latest version the future of tech"
+    },
+    {
+      "id": "3",
+      "body": "AI in 2024",
+      "title": "impact on daily life"
+    }
+  ]
+}
