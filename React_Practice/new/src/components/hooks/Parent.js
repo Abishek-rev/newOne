@@ -5,7 +5,7 @@ import { useRef } from 'react';
 export default function Parent() {
     const pcountRef = useRef(0);
     pcountRef.current += 1;
-    const array = [1,2,3,4,5]
+    const array = [1,2,3,4,5,5]
   return (
     <div>
       <UseMemohook num={array} />
