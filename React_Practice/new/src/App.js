@@ -7,11 +7,19 @@ import Home from "./components/Tanstack/components/Home";
 import Parent from "./components/hooks/Parent";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import UseMemohook from "./components/hooks/UseMemohook";
-import UseCallback from './components/hooks/UseCallback'
+import UseCallback from "./components/hooks/UseCallback";
+import {
+  QueryClientProvider,
+  
+  QueryClient
+} from "@tanstack/react-query";
+import Root from "./components/Tanstack/Root/Root";
 // import { QueryClient } from "@tanstack/react-query";
 // import AnimationAndTransition from "./components/css_Conepts/AnimationAndTransition";
 
 function App() {
+  const queryClient = new QueryClient();
+
   return (
     // <BrowserRouter> {/* Move BrowserRouter to the top */}
     //   <div  style={{display:"flex", justifyContent:"space-around"}} className="App">
@@ -28,7 +36,10 @@ function App() {
     //   </Routes>
     // </BrowserRouter>
     <div>
-      <UseCallback/>
+      <QueryClientProvider client={queryClient}>
+        <Root />
+      </QueryClientProvider>
+      {/* <UseCallback /> */}
     </div>
   );
 }
