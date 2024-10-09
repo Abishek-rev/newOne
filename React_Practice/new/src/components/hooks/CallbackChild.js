@@ -5,4 +5,4 @@ const ChildComponent = (({ handleClick }) => {
   return <button onClick={handleClick}>Click Me</button>;
 });
 
-export default ChildComponent
+export default memo(ChildComponent)
